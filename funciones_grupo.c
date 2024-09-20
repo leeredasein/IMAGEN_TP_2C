@@ -68,7 +68,8 @@ int solucion(int argc, char* argv[])
     int ancho = metadata.ancho;
     int alto = metadata.alto;
 
-    t_pixel** imagen = malloc(sizeof(t_pixel*) * alto);
+    t_pixel** imagen = (t_pixel**)malloc(sizeof(t_pixel*) * alto);
+
     if (imagen == NULL)
     {
         perror("Error asignando memoria alto");
@@ -81,7 +82,7 @@ int solucion(int argc, char* argv[])
 
     for (int i = 0; i < alto; i++)
     {
-        imagen[i] = malloc(sizeof(t_pixel) * ancho);
+        imagen[i] = (t_pixel*)malloc(sizeof(t_pixel) * ancho);
         if (imagen[i] == NULL)
         {
             perror("Error asignando memoria ancho");

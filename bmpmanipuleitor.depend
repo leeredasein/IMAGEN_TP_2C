@@ -27,3 +27,31 @@
 
 1726725588 c:\users\kevin\onedrive\escritorio\tp_topicos_2024_2c_sabados_imagen\bmpmanipuleitor\estructuras.h
 
+1726795530 source:c:\users\kevin\onedrive\escritorio\github\imagen_tp_2c\funciones_alvarez.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"funciones_alvarez.h"
+	"estructuras.h"
+
+1726794276 c:\users\kevin\onedrive\escritorio\github\imagen_tp_2c\funciones_alvarez.h
+	"estructuras.h"
+
+1726725588 c:\users\kevin\onedrive\escritorio\github\imagen_tp_2c\estructuras.h
+
+1726763397 source:c:\users\kevin\onedrive\escritorio\github\imagen_tp_2c\funciones_grupo.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"funciones_alvarez.h"
+
+1726629226 source:c:\users\kevin\onedrive\escritorio\github\imagen_tp_2c\main.c
+	<stdio.h>
+	"funciones_grupo.h"
+
+1726712484 c:\users\kevin\onedrive\escritorio\github\imagen_tp_2c\funciones_grupo.h
+	"funciones_rufino.h"
+	<string.h>
+	<stdio.h>
+	"funciones_alvarez.h"
+

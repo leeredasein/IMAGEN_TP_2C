@@ -7,6 +7,7 @@ void negativo(t_pixel** imagen, int ancho, int alto);
 void escala_de_grises(t_pixel** imagen, int ancho, int alto);
 t_metadata obtener_metadata(FILE* archivo);
 void guardar_imagen(FILE* archivo,t_pixel** imagen, int ancho, int alto, t_metadata metadata);
+void moverCursor(FILE* archivo, int cant_posicion);
 
 
 //void espejar_horizontal(t_pixel*);

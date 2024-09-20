@@ -5,12 +5,20 @@
 #include "estructuras.h"
 
 
-
+void moverCursor(FILE* archivo, int cant_posicion)
+{
+    unsigned char aux;
+    for(int i = 0; i <cant_posicion; i++)
+    {
+        fread(&aux, sizeof(unsigned char), 1, archivo);
+    }
+}
 
 
 t_metadata obtener_metadata(FILE* archivo)
 {
     t_metadata metadata;
+    moverCursor(archivo,2);
 
     if (fread(&metadata.tamArchivo, sizeof(unsigned int), 1, archivo) != 1)
     {
@@ -20,6 +28,8 @@ t_metadata obtener_metadata(FILE* archivo)
     {
         printf("tamArchivo: %u\n", metadata.tamArchivo);
     }
+
+    moverCursor(archivo,8);
 
     if (fread(&metadata.tamEncabezado, sizeof(unsigned int), 1, archivo) != 1)
     {
@@ -47,6 +57,8 @@ t_metadata obtener_metadata(FILE* archivo)
     {
         printf("alto: %u\n", metadata.alto);
     }
+
+     moverCursor(archivo,2);
 
     if (fread(&metadata.profundidad, sizeof(unsigned short), 1, archivo) != 1)
     {
